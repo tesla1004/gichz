@@ -1290,6 +1290,7 @@ class taskCog(commands.Cog):
 			for i in range(waiting_time):
 				for message in message_list:
 					try:
+						await ctx.send('@everyone')
 						await message.edit(content=msg + f"(잔여시간 : {waiting_time - i}초)")
 					except:
 						pass
