@@ -3689,7 +3689,7 @@ class mainCog(commands.Cog):
 			msg = ""
 			if args:
 				msg = args
-			everyone = " @everyone"
+			everyone = " @트붕이"
 			guild_id = ctx.guild.id
 			for chnl in channel_list:
 				if guild_id != self.bot.get_channel(chnl).guild.id:
