@@ -1284,7 +1284,7 @@ class taskCog(commands.Cog):
 
 	async def reaction_check(self, msg):
 		global channel_list
-		everyone = "@트붕이"
+		everyone = "<@434023710744117249><@611441596419932160><@276808396848758784><@302421270153134081><@320186591530319872><@362907434517528576><@89244626900234240><@298141268943437825><@206739264124354560>"
 		message_list = []
 		try:
 			for chnl in channel_list:
