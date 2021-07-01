@@ -1284,7 +1284,7 @@ class taskCog(commands.Cog):
 
 	async def reaction_check(self, msg):
 		global channel_list
-		everyone = "@everyone"
+		everyone = "@트붕이"
 		message_list = []
 		try:
 			for chnl in channel_list:
