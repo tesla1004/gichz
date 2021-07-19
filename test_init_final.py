@@ -1284,7 +1284,7 @@ class taskCog(commands.Cog):
 
 	async def reaction_check(self, msg):
 		global channel_list
-		everyone = "<@434023710744117249><@611441596419932160><@276808396848758784><@302421270153134081><@320186591530319872><@362907434517528576><@89244626900234240><@298141268943437825><@206739264124354560>"
+		everyone = "@everyone"
 		message_list = []
 		try:
 			for chnl in channel_list:
@@ -1327,7 +1327,7 @@ class taskCog(commands.Cog):
 			for guild in guild_list:
 				final_msg+="\n["+guild+"]"+', '.join(result_dic[guild])
 			for message in message_list:
-				await message.edit(content=final_msg, delete_after=60)
+				await message.edit(content=final_msg, delete_after=180)
 		except Exception as e:
 			print(str(e))
 			try:
