@@ -1327,7 +1327,7 @@ class taskCog(commands.Cog):
 			for guild in guild_list:
 				final_msg+="\n["+guild+"]"+', '.join(result_dic[guild])
 			for message in message_list:
-				print(guild)
+				await message.edit(delete_after=30)
 		except Exception as e:
 			print(str(e))
 			try:
